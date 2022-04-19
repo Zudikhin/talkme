@@ -23,25 +23,25 @@
           <img src="img/header/logo.svg" alt="">
         </a>
         <ul>
-          <li>
+          <li data-target="benefits">
             <p>Преимущества</p>
           </li>
-          <li>
+          <li data-target="work">
             <p>Как работает</p>
           </li>
-          <li>
+          <li data-target="media">
             <p>СМИ о нас</p>
           </li>
-          <li>
+          <li data-target="faq"> 
             <p>FAQ</p>
           </li>
-          <li>
+          <li data-target="cooperation">
             <p>Сотрудничество</p>
           </li>
-          <li>
+          <li data-target="streamer">
             <p>Cтримеры</p>
           </li>
-          <li>
+          <li data-target="team">
             <p>Команда</p>
           </li>
         </ul>
@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <section class="can">
+    <section id="benefits" class="can">
       <img class="can_background" src="img/can/background.png" alt="">
       <div class="container">
         <div class="can_block">
@@ -120,7 +120,7 @@
       </div>
     </section>
 
-    <section class="work">
+    <section id="work" class="work">
       <div class="container">
         <h2>Как работает?</h2>
         <div class="work_block">
@@ -184,7 +184,7 @@
       </div>
     </section>
 
-    <section class="media">
+    <section id="media" class="media">
       <img class="media_img" src="img/media/fax.png" alt="">
       <div class="container">
         <div class="media_block">
@@ -287,7 +287,7 @@
         <img src="img/faq/background.png" alt="">
       </div>
       <div class="container">
-        <h2>FAQ</h2>
+        <h2 id="faq">FAQ</h2>
         <div class="faq_block">
           <div class="faq_block_img">
             <img src="img/faq/girl.png" alt="">
@@ -356,7 +356,7 @@
 
           </div>
         </div>
-        <div class="faq_cooperation">
+        <div id="cooperation" class="faq_cooperation">
           <div class="faq_cooperation_img">
             <img src="img/faq/mob.png" alt="">
           </div>
@@ -383,7 +383,7 @@
       </div>
     </section>
 
-    <section class="talks">
+    <section id="streamer" class="talks">
       <h2>Талкеры говорят</h2>
       <p class="talks_underline">Мнение о Talkme и live трансляциях <br>
         от ведущих эфиров</p>
@@ -529,7 +529,7 @@
       </div>
     </section>
 
-    <section class="team">
+    <section id="team" class="team">
       <div class="container">
         <div class="team_block">
           <h2>Команда</h2>
@@ -627,6 +627,69 @@
         </div>
       </div>
     </footer>
+
+    <div class="application">
+      <div class="application_btn">
+        <span>Заявка</span>
+      </div>
+    </div>
+
+    <div class="modal_back"></div>
+
+    <div class="form">
+      <div class="form_close">
+        <img src="img/modal/close.svg" alt="">
+      </div>
+      <div class="form_left">
+        <img class="form_left_main mob" src="img/modal/text_mobile.png" alt="">
+        <img class="form_left_main desk" src="img/modal/text_desktop.png" alt="">
+        <img class="form_left_second" src="img/modal/girl.png" alt="">
+      </div>
+      <div class="form_right">
+        <h4>Оставь заявку 
+          на сотрудничество</h4>
+        <form id="form" action="">
+          <label for="">
+            <span>ФИО</span>
+            <input type="text">
+          </label>
+          <label for="">
+            <span>Возраст</span>
+            <input type="text">
+          </label>
+          <label for="">
+            <span>Номер телефона</span>
+            <input type="tel">
+          </label>
+          <label for="">
+            <span>Почта</span>
+            <input type="email">
+          </label>
+          <label for="">
+            <span>Модель телефона</span>
+            <input type="text">
+          </label>
+          <label for="">
+            <span>Ваш никнейм</span>
+            <input type="text">
+          </label>
+          <p>Нажимая на кнопку, вы соглашаетесь на обработку и передачу персональных данных</p>
+          <button type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="thank">
+      <div class="thank_close">
+        <img src="img/modal/close.svg" alt="">
+      </div>
+      <div class="thank_img">
+        <img class="thank_img_back" src="img/modal/thank.png" alt="">
+        <img class="thank_img_main" src="img/modal/girl.png" alt="">
+      </div>
+      <h4>Спасибо!</h4>
+      <p>Ваша заявка отправлена, <br> в ближайшее время она будет рассмотрена</p>
+    </div>
     
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.js"></script>
