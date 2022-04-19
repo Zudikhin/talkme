@@ -2342,11 +2342,11 @@ h1 {
 
 .footer {
   position: relative;
-  height: 732px;
+  height: 610px;
 }
 
 .footer .container {
-  height: 732px;
+  height: 610px;
 }
 
 .footer_block {
@@ -2459,10 +2459,10 @@ h1 {
 
 @media (min-width: 1200px) {
   .footer {
-    height: 250px;
+    height: 300px;
   }
   .footer .container {
-    height: 250px;
+    height: 300px;
   }
   .footer_block {
     -webkit-box-orient: horizontal;
@@ -2472,6 +2472,9 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 52px 52px 40px 52px;
     width: 100%;
   }
